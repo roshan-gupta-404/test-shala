@@ -5,7 +5,7 @@ import { subjects } from '../../question/question'
 function AllSubjects({catId}) {
     console.log(subjects[catId]);
     return (
-        <div className='flex flex-wrap gap-10'>
+        <div className='flex justify-center sm:justify-start flex-wrap gap-10'>
         {subjects[catId]?.map((subject)=>(
             <Link to={`/test-list/${subject.subjectId}`} key={subject.subjectId}>
                 <div className="max-w-sm w-64 h-72 bg-white border hover:scale-105 overflow-hidden duration-300 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

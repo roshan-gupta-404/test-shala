@@ -30,8 +30,8 @@ function TestList() {
                       navigate(`/test-page/${questionSet.questionSetId}`)
                     }}
                   >
-                    <div className='flex text-lg w-1/2 px-5'>{questionSet.questionSetName}</div>
-                    <div className='w-1/2'></div>
+                    <div className='flex text-lg w-2/3 px-5'>{questionSet.questionSetName}</div>
+                    <div className='w-1/3'></div>
                   </div>
                 ))}
               </div>
