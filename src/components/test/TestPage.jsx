@@ -13,8 +13,8 @@ function TestPage() {
     // const questions = questionSet // questionSet is an array of questions.
     const [quesNum, setQuesNum] = useState(0)
     const [disable, setDisable] = useState(false)
-    const [showQuestionPallete, setShowQuestionPallete] = useState()
-    const [testStarted, setTestStarted] = useState(true)
+    const [showQuestionPallete, setShowQuestionPallete] = useState(true)
+    const [testStarted, setTestStarted] = useState(false)
     let prevResponse = useSelector((state) => state.responseSheet[quesNum]) // if question is already answered it will return the optionId answered.
     let testActive = useSelector((state) => state.testActive) // if question is already answered it will return the optionId answered.
     const dispatch = useDispatch()
