@@ -1,17 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+import { Outlet } from 'react-router-dom'
+import ResultPage from './components/result/ResultPage'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
+    <div id='body'>
+      <Header/>
+      <main>
+        <Outlet/>
+        {/* <ResultPage/> */}
+      </main>
+      <Footer/>
+      
+    </div>
   )
 }
 

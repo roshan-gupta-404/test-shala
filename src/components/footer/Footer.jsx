@@ -11,7 +11,7 @@ function Footer() {
 
   return (
     <>
-      <footer id="footer" className="p-4 border-t bg-gray-950 text-white border-t-black">
+      <footer id="footer" className="p-4 border-t bg-white text-black border-t-black">
         <Container>
           <div className="flex flex-col-reverse sm:flex-row sm justify-between items-center  bottom-0 px-4">
             <div>
