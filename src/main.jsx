@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './components/main/Home.jsx'
-import TestPage from './components/test/TestPage.jsx'
+import Home from './pages/Home.jsx'
+import TestPage from './pages/TestPage.jsx'
 import AllSubjects from './components/main/subjects/AllSubjects.jsx'
-import TestList from './components/test/TestList.jsx'
+import TestList from './pages/TestList.jsx'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 import ResultPage from './components/result/ResultPage.jsx'
@@ -25,11 +25,11 @@ const router = createBrowserRouter([
         element:<TestList/> 
       },
       {
-        path:'test-page/:slug',
+        path:'test-page/:testPaperID',
         element:<TestPage/>
       },
       {
-        path:'result-page',
+        path:'result-page/:testPaperID',
         element:<ResultPage/>
       },
     ]
@@ -37,10 +37,10 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
+  <React.StrictMode>
   <Provider store={store}>
     <RouterProvider router={router}/>
   </Provider>
-  //</React.StrictMode>
+  </React.StrictMode>
   ,
 )

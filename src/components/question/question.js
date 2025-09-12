@@ -558,7 +558,7 @@ export const questionBank = {
 
 export const questionSet = {
     QS1_MatheAptitude_PlacePrep:{
-        duration:{hr:0, min:30,sec:0},
+        duration:{hr:0, min:0,sec:10},
         questions:[
         {
             questionId: 'q1',

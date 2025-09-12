@@ -2,7 +2,7 @@ import React from 'react'
 
 function Container({children}) {
   return (
-    <div className='max-w-screen-2xl mx-auto px-2'>
+    <div className='bg-gradient-to-br from-orange-50 to-red-50'>
     {children}
     </div>
   )
