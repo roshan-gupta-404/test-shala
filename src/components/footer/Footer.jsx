@@ -15,7 +15,7 @@ function Footer() {
         <Container>
           <div className="flex flex-col-reverse sm:flex-row sm justify-between items-center  bottom-0 px-4">
             <div>
-              <p className="text-center"> &copy; 2024 Tesh Shala. All rights reserved.</p>
+              <p className="text-center"> &copy; 2024 Test Shala. All rights reserved.</p>
             </div>
             <div className="flex justify-around">
               {iconsTab.map((item) => {
