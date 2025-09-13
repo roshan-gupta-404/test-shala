@@ -1,8 +1,5 @@
 import React from 'react'
 import Container from '../components/Container'
-import TestList from './TestList'
-import AllSubjects from '../components/main/subjects/AllSubjects'
-import { examCategories } from '../question'
 import { useSelector } from 'react-redux'
 import * as Icons from 'lucide-react';
 import { ChevronRight } from 'lucide-react';

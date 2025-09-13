@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../Container'
 import { Link, NavLink } from 'react-router-dom'
-import { ChevronRight, BookOpen, Target, Users, Award } from 'lucide-react';
+import {  BookOpen } from 'lucide-react';
 
 function Header() {
     const authStatus = false
@@ -23,7 +23,6 @@ function Header() {
         // },
     ]
     return (
-        // <header className='bg-white gray-950 sm:border-b border-slate-500 text-2xl'>
         <Container>
             <header className="bg-white shadow-md border-b border-orange-100 mb-4">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -48,7 +47,6 @@ function Header() {
                     </div>
                 </div>
             </header>
-            {/* </header> */}
         </Container>
     )
 }

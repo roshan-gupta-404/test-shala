@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Container from '../components/Container'
 import QuestionIndex from '../components/buttons/QuestionIndex'
-import { questionSet } from '../question'
 import { useDispatch, useSelector } from 'react-redux'
 import { addResponse, clearResponse, createResponseSheet, endTest, removeResponse } from '../store/responseSlice'
 import { useNavigate, useParams } from 'react-router-dom'

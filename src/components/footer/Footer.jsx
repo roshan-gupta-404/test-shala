@@ -1,7 +1,6 @@
 import { CiLinkedin } from "react-icons/ci";
 import { LuGithub } from "react-icons/lu";
 import Container from "../Container";
-import { Link } from "react-router-dom";
 import { BookOpen } from "lucide-react";
 
 function Footer() {

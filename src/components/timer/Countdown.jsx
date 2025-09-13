@@ -22,7 +22,7 @@ function Countdown({ duration, disableTestFunc, }) {
             clearInterval(timer)
 
         }
-    },[timeup])
+    },[])
 
     return (
         <div>
