@@ -12,7 +12,9 @@ dist
 dist-ssr
 schema.js
 TODO.txt
+question.js
 *.local
+
 
 # Editor directories and files
 .vscode/*
@@ -24,3 +26,5 @@ TODO.txt
 *.njsproj
 *.sln
 *.sw?
+.env
+

@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../../Container'
 import { Link } from 'react-router-dom'
-import { subjects } from '../../question/question'
+import { subjects } from '../../../question'
 function AllSubjects({ Subjects }) {
     // console.log(Subjects);// SUBJECT IS AN ARRAY OF SUBJECT, ID, etc.. ( [{},{},{}...])
 
