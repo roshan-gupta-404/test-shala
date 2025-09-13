@@ -1,15 +1,15 @@
 import React from 'react'
 import Container from '../Container'
 import { Link, NavLink } from 'react-router-dom'
-// import LogoutBtn from './LogoutBtn'
+import {  BookOpen } from 'lucide-react';
 
 function Header() {
     const authStatus = false
     const navItems = [
         {
-          name: 'Home',
-          slug: "/",
-          active: true
+            name: 'Home',
+            slug: "/",
+            active: true
         },
         // {
         //   name: 'Login',
@@ -21,34 +21,33 @@ function Header() {
         //   slug: "/signup",
         //   active: !authStatus
         // },
-      ]
+    ]
     return (
-        <header className='bg-white gray-950 sm:border-b border-slate-500 text-2xl'>
-            <Container>
-                <nav className='sm:flex justify-between py-3  '>
-
-                    <div className='flex justify-center text-2xl sm:ml-2 mb-2 sm:mb-0 font-bold'>
-                        <Link to={'/'}>Test Shala </Link>
+        <Container>
+            <header className="bg-white shadow-md border-b border-orange-100 mb-4">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                    <div className="flex justify-between items-center">
+                        <div className="flex items-center space-x-2">
+                            <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
+                                <BookOpen className="w-5 h-5 text-white" />
+                            </div>
+                            <h1 className="text-2xl font-bold text-gray-900"><Link to={'/'}>TestShala </Link></h1>
+                        </div>
+                        <nav className="hidden md:flex space-x-8">
+                            {navItems.map((menu) => (
+                                menu.active ?
+                                    (<NavLink key={menu.name} to={menu.slug} className={({ isActive }) => `${isActive ? 'text-yellow-500' : ''}`}>
+                                        <span className='text-gray-600 hover:text-orange-600 transition-colors'>
+                                            {menu.name}
+                                        </span>
+                                    </NavLink>)
+                                    : null
+                            ))}
+                        </nav>
                     </div>
-                        
-                    <div className='flex justify-center border-y pb-1 sm:pb-0 border-slate-500 sm:border-y-0'>
-                        <ul className='flex sm:ml-auto'>
-                        {navItems.map((menu)=>(
-                            menu.active ?
-                            (<NavLink key={menu.name} to={menu.slug} className={({isActive})=>`${isActive?'text-yellow-500':''}`}>
-                                <li className='mx-3 text-xl hover:text-yellow-500 duration-300'>
-                                    {menu.name}
-                                </li>
-                            </NavLink>)
-                            : null
-                        ))}
-                            {/* {authStatus && <LogoutBtn/>} */}
-                        </ul>
-                    </div>
-
-                </nav>
-            </Container>
-        </header>
+                </div>
+            </header>
+        </Container>
     )
 }
 
